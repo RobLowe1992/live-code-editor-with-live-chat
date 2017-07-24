@@ -22,7 +22,10 @@ $message.keypress(()=>{
 });
 
 socket.on('live-chat', (response)=>{
-    $output.append(`<p><strong class="users">${response.username}:</strong>${response.message}</p>`);
+    let date = new Date().toString();
+    let dateSplit = date.split(' ');
+    let time = dateSplit[4].split('').splice(0,5).join('');
+    $output.append(`<p class="comment"><strong class="users">${response.username}:</strong>${response.message}\n</p><br><p><em class="time">${time}</em></p>` );
     $feedback.css('display','none')
 });
 

@@ -18,19 +18,24 @@ h2 {
   height: 400px;
   overflow: auto;
   background: #f9f9f9;
-  margin-top: 2em;
   border: 1px solid #ddd;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.05);
   border-radius: 2px; }
 
 #output p {
-  padding: 14px 0px;
   margin: 0 20px;
-  border-bottom: 1px solid #e9e9e9;
   color: #555; }
+
+#output .comment {
+  padding: 14px 0 0 0;
+  border-top: 1px solid #e9e9e9;
+  margin-top: 1em; }
 
 #output strong {
   color: #228B22; }
+
+#output .time {
+  color: #dde4e9; }
 
 #feedback p {
   color: #aaa;
@@ -42,7 +47,10 @@ label {
   display: block;
   padding: 10px 20px; }
 
-input {
+textarea {
+  height: 19em; }
+
+.text {
   padding: 10px 20px;
   box-sizing: border-box;
   background: #eee;
@@ -61,11 +69,16 @@ button {
   border: 0;
   padding: 12px 0;
   width: 100%;
-  border-radius: 0 0 2px 2px; }
+  border-radius: 0 0 2px 2px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0; }
 
 #inputs {
   border: 1px solid #ddd;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.05);
-  border-radius: 2px; }
+  border-radius: 2px;
+  height: 400px; }
 
 /*# sourceMappingURL=style.css.map */

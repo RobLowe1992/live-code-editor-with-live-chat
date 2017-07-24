@@ -11,19 +11,19 @@
 </head>
 <body class="container">
     <div class="row">
-        <div id="editor" class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
-            <p>Hello</p>
+
+        <div id="editor" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
         </div>
-        <div id="chat" class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-            <div id="inputs">
-                <input type="text" id="username" placeholder="username">
-                <input type="text" id="message" placeholder="Message">
-                <button id="send">Send</button>
-            </div>
-            <div id="chat-window">
-                <div id="output"></div>
-                <div id="feedback"></div>
-            </div>
+    </div>
+    <div id="chat" class="row">
+        <div id="inputs" class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+            <input class="text" type="text" id="username" placeholder="username">
+            <textarea class="text" type="text" id="message" placeholder="Message"></textarea>
+            <button id="send">Send</button>
+        </div>
+        <div id="chat-window" class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
+            <div id="output"></div>
+            <div id="feedback"></div>
         </div>
     </div>
 </body>
