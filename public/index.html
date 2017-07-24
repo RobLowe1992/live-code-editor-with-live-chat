@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <title>Chat App</title>
+</head>
+<body class="container">
+    <div class="row">
+        <div id="editor" class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
+            <p>Hello</p>
+        </div>
+        <div id="chat" class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+            <div id="inputs">
+                <input type="text" id="username" placeholder="username">
+                <input type="text" id="message" placeholder="Message">
+                <button id="send">Send</button>
+            </div>
+            <div id="chat-window">
+                <div id="output"></div>
+                <div id="feedback"></div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.3/socket.io.js"></script>
+<script src="/javascripts/chat.js"></script>
+</html>
